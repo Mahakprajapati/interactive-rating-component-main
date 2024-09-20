@@ -1,0 +1,139 @@
+body {
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 14px;
+}
+.container {
+  max-width: 350px;
+  width: 100%;
+  min-height: 300px;
+  font-family: "Overpass", sans-serif;
+  border-radius: 1rem;
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1rem;
+  gap: 1rem;
+  padding-block: 2rem;
+  cursor:default;
+}
+
+.heading {
+  font-size: x-large;
+  color: hsl(0, 0%, 100%);
+  margin: 0;
+}
+.img-container {
+  background-color: hsl(217deg 12% 63% / 22%);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragraph {
+  color: hsl(217, 12%, 63%);
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+.star-container {
+  display: flex;
+  justify-content: space-between;
+}
+.star {
+  height: 50px;
+  width: 50px;
+  background-color: hsl(217deg 12% 63% / 22%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+  font-weight: 600;
+  color: hsl(217, 12%, 63%);
+  border-color:  hsl(217deg 12% 63% / 22%) ;
+}
+.star:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(213, 19%, 18%);
+}
+.white {
+  background-color: #ffff;
+  color: hsl(213, 19%, 18%);
+}
+#button {
+  display: flex;
+  background-color: hsl(25, 97%, 53%);
+  padding-block: 0.6rem;
+  justify-content: center;
+  border-radius: 100px;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+}
+#button:hover {
+  background-color: hsl(216, 56%, 98%);
+}
+.thank-u-container {
+  position: absolute;
+  visibility: hidden;
+}
+.rating-container {
+  position: absolute;
+  visibility: hidden;
+}
+.selected {
+  color: hsl(25, 97%, 53%);
+  background-color: hsla(217, 12%, 63%, 0.119);
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  font-size: 0.95rem;
+  border-radius: 100px;
+}
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+}
+.heading2 {
+  text-align: center;
+  margin: 0;
+  font-size: x-large;
+  color: hsl(0, 0%, 100%);
+  margin: 0;
+}
+.paragraph2 {
+  color: hsl(217, 12%, 63%);
+  margin: 0;
+  font-size: 0.89rem;
+  text-align: center;
+  line-height: 1.2rem;
+}
+
+@media(max-width:349px){
+  .star{
+    height: 35px;
+    width: 35px;
+  }
+  .img-container{
+    height: 35px;
+    width: 35px;
+  }
+}
